@@ -16,8 +16,17 @@
     <!-- Data -->
     <div
       v-else 
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      class="grid grid-cols-3 gap-6"
     >
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
       <router-link
         class="flex flex-col items-center bg-light-grey p-8 shadow-md cursor-pointer"
         :to="{ name: 'View-Workout', params: { workoutId: workout.id } }"
@@ -57,9 +66,10 @@
 <script>
 import { ref } from "vue";
 import { supabase } from "../supabase/init";
+import ProductCard from "../components/ProductCard.vue";
 export default {
-  name: "home",
-  components: {},
+  name: "catalogue",
+  components: {ProductCard},
   setup() {
     // Create data / vars
     const data = ref([]);

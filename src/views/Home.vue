@@ -26,7 +26,7 @@
           </h1>
         </div>
         <!--Right Col-->
-        <div class="w-full py-6 px-6 md:w-3/5 text-center">
+        <div class="w-full py-8 px-8 md:w-3/5 text-center">
           <h1 class="my-6 text-5xl font-bold leading-tight text-white">
             About Us
           </h1>
@@ -40,13 +40,15 @@
       </div>
 
     <section class="bg-white border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      <div class="container mx-auto flex flex-wrap py-8">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-at-blue">
           Catalogue
         </h2>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <div class="grid grid-cols-3 gap-8 pt-16">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
       </div>
     </section>
 
@@ -72,6 +74,8 @@
         </div>
       </div>
     </div>
+
+    <Footer />
   </div>
 </template>
 
@@ -79,9 +83,10 @@
 import { ref } from "vue";
 import { supabase } from "../supabase/init";
 import ProductCard from "../components/ProductCard.vue";
+import Footer from "../components/Footer.vue";
 export default {
   name: "home",
-  components: { ProductCard },
+  components: { ProductCard, Footer },
   setup() {
     // Create data / vars
     const data = ref([]);

@@ -25,6 +25,18 @@
     </div>
 
     <div class="flex flex-col mb-2">
+      <label for="phoneNumber" class="mb-1 text-m text-at-blue">Phone Number</label>
+      <input type="tel" 
+      onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+      required 
+      class="p-2 text-at-blue rounded-2xl border-2 border-at-blue focus:outline-at-dark-blue" 
+      id="phoneNumber"
+      placeholder="Enter your phone number here..."
+      v-model="phoneNumber"
+      /> 
+    </div>
+
+    <div class="flex flex-col mb-2">
       <label for="password" class="mb-1 text-m text-at-blue">Password</label>
       <input type="password" 
       required 
@@ -36,7 +48,7 @@
     </div>
 
     <div class="flex flex-col mb-2">
-      <label for="confirmPassword" class="mb-1 text-m text-at-blue">Confirm Passwrod</label>
+      <label for="confirmPassword" class="mb-1 text-m text-at-blue">Confirm Password</label>
       <input type="password" 
       required 
       class="p-2 text-at-blue rounded-2xl border-2 border-at-blue focus:outline-at-dark-blue" 
