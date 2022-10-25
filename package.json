@@ -34,5 +34,18 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-tailwind": "~2.0.6"
-  }
+  },
+  "description": "Remojo stand for REntal MOtor JOgja. Remojo focus on motorcycle rental. To make their user easier to order, Remojo develop a website. So their user can order from website.",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommyyonp/Remojo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tommyyonp/Remojo/issues"
+  },
+  "homepage": "https://github.com/Tommyyonp/Remojo#readme"
 }
